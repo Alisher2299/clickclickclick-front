@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  @apply min-h-screen w-full bg-gray-200;
+}
+
+table {
+  @apply w-full text-sm text-left text-gray-500;
+}
+
+tr {
+  @apply odd:bg-white even:bg-gray-50 border-b;
+}
+
+th {
+  @apply flex items-center gap-2 px-6 py-4 font-medium text-gray-900 whitespace-nowrap;
+}
+
+.counters {
+  @apply flex flex-col text-center my-6 gap-2;
+}
+
+.counters > p {
+  @apply text-lg;
+}
+
+.menu-item--active {
+  @apply block p-0 rounded bg-transparent text-blue-700;
+}
+
+.menu-item {
+  @apply block p-0 text-gray-900 rounded hover:bg-transparent hover:text-blue-700;
+}
